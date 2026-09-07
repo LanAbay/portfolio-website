@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chang Yi Chen | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --bg: #f7f7f9;
+      --card-bg: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --accent: #5b7c99;
+      --border: #e5e5e5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 24px 16px 64px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 0 24px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    section {
+      margin-top: 40px;
+    }
+
+    section h2 {
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 6px;
+      display: inline-block;
+    }
+
+    .about {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 16px;
+    }
+
+    .portfolio-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .portfolio-thumb {
+      width: 100%;
+      height: 160px;
+      background: #e9e9f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .portfolio-content {
+      padding: 16px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .portfolio-content h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+
+    .portfolio-content p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 12px;
+      flex: 1;
+    }
+
+    .portfolio-content a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .portfolio-content a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 首頁 / Header -->
+    <header>
+      <h1>Chang Yi Chen</h1>
+      <p>臺北市立大學 心理與諮商學系</p>
+    </header>
+
+    <!-- 關於我 -->
+    <section>
+      <h2>關於我</h2>
+      <div class="about">
+        <p>
+          目前就讀臺北市立大學心理與諮商學系，對心理學、教育與人的發展有濃厚興趣。
+          未來希望能透過作品與專案，展現自己在研究、設計與實務應用上的能力。
+        </p>
+        <p style="margin-top: 12px;">
+          此網站為個人作品集，將陸續更新課程作業、專案成果與相關作品。
+        </p>
+      </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section>
+      <h2>作品集</h2>
+      <p style="color: var(--muted); font-size: 0.95rem;">
+        以下為預留的作品區塊，未來將陸續新增實際作品內容。
+      </p>
+
+      <div class="portfolio-grid">
+        <!-- 作品 1（範本，之後可複製此區塊新增） -->
+        <div class="portfolio-item">
+          <div class="portfolio-thumb">
+            作品預覽圖（待新增）
+          </div>
+          <div class="portfolio-content">
+            <h3>作品標題 1</h3>
+            <p>
+              作品簡短說明，例如：課程專案／研究計畫／活動設計等。
+              之後可在此補充你的角色與成果。
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">查看作品詳情 →</a>
+          </div>
+        </div>
+
+        <!-- 作品 2（範本） -->
+        <div class="portfolio-item">
+          <div class="portfolio-thumb">
+            作品預覽圖（待新增）
+          </div>
+          <div class="portfolio-content">
+            <h3>作品標題 2</h3>
+            <p>
+              作品簡短說明。未來可在此加入更多細節，
+              像是研究問題、方法、結果或設計重點。
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">查看作品詳情 →</a>
+          </div>
+        </div>
+
+        <!-- 作品 3（範本） -->
+        <div class="portfolio-item">
+          <div class="portfolio-thumb">
+            作品預覽圖（待新增）
+          </div>
+          <div class="portfolio-content">
+            <h3>作品標題 3</h3>
+            <p>
+              作品簡短說明。之後可依需求調整文字與連結，
+              或將此區塊複製多份以新增更多作品。
+            </p>
+            <a href="#" target="_blank" rel="noopener noreferrer">查看作品詳情 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer>
+      <p>© 2026 Chang Yi Chen. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
